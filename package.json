@@ -1,5 +1,5 @@
 {
-  "name": "@RoostJS/roost-cli",
+  "name": "@roostjs/cli",
   "version": "0.0.0",
   "description": "RoostJS CLI",
   "author": "BMO @RoostJS",
@@ -18,19 +18,14 @@
   ],
   "dependencies": {
     "@oclif/core": "^1.19.1",
-    "@oclif/plugin-help": "^5",
-    "@oclif/plugin-plugins": "^2.1.7"
+    "@oclif/plugin-help": "^5"
   },
   "devDependencies": {
     "@oclif/test": "^2.2.12",
-    "@types/chai": "^4",
-    "@types/mocha": "^9.0.0",
     "@types/node": "^16.18.4",
-    "chai": "^4",
     "eslint": "^7.32.0",
     "eslint-config-oclif": "^4",
     "eslint-config-oclif-typescript": "^1.0.3",
-    "mocha": "^9",
     "oclif": "^3",
     "shx": "^0.3.3",
     "ts-node": "^10.9.1",
@@ -42,15 +37,10 @@
     "dirname": "roost",
     "commands": "./dist/commands",
     "plugins": [
-      "@oclif/plugin-help",
-      "@oclif/plugin-plugins"
+      "@oclif/plugin-help"
     ],
     "topicSeparator": " ",
-    "topics": {
-      "hello": {
-        "description": "Say hello to the world and others"
-      }
-    }
+    "topics": {}
   },
   "scripts": {
     "build": "shx rm -rf dist && tsc -b",
@@ -62,11 +52,7 @@
     "version": "oclif readme && git add README.md"
   },
   "engines": {
-    "node": ">=12.0.0"
+    "node": ">=18.0.0"
   },
-  "bugs": "https://github.com/RoostJS/roost-cli/issues",
-  "keywords": [
-    "oclif"
-  ],
   "types": "dist/index.d.ts"
 }
